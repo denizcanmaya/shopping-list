@@ -45,7 +45,7 @@ function saveToLS() {
 }
 
 function loadItems() {
-  const items = JSON.parse(localStorage.getItem("shoppingItems") || [])
+  const items = JSON.parse(localStorage.getItem("shoppingItems")) || [];
   shoppingList.innerHTML = "";
 
   for (let item of items) {
